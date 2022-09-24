@@ -1,0 +1,758 @@
+/*
+Theme Name: Barcode Studia
+Theme URI: 
+Description: Official Barcode Studia website theme.
+Version: 1.0
+Author: the_1826
+Author URI:
+*/
+
+@font-face {
+	font-family: 'Barcode'; 
+	src: url('fonts/barcode.ttf'); 
+}
+
+@font-face {
+	font-family: 'Barcode'; 
+	src: url('fonts/barcode.ttf'); 
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+@media (min-width: 560px) {
+	.site  {
+	font-size: 17px;
+	}
+}
+
+@media (min-width: 992px) {	
+	.site  {
+	font-size: 18px;
+	}
+}
+
+.site {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	font: 16px 'Be Vietnam Pro', Verdana;
+	background: #101010;
+	color: white;
+}
+
+.site header {
+	flex: 0 0 auto;
+	padding-top: 30px;
+}
+
+.site main {
+	flex: 1 0 auto;
+}
+
+.site footer {
+	flex: 0 0 auto;
+	padding: 30px 0px
+}
+
+footer .mail {
+	color: #AB7FCB
+}
+
+footer .mail:hover {
+	text-decoration: underline
+}
+
+@media (min-width: 768px) {
+	header {
+	padding-bottom: 30px;
+}
+}		
+
+.site h1 {
+	font-family: barcode;
+	font-size: 80px;
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: normal
+}
+
+.site .what-is h1 {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+@media (min-width: 992px) {
+	.site .what-is h1 {
+	font-size: 120px;
+	}
+}
+
+.site h2 {
+	font-family: 'Barcode';
+	margin-bottom: 25px;
+	font-size: 90px;
+	text-align: center;
+	font-weight: normal;
+}
+
+@media (min-width: 768px) {
+	.site h2 {
+	font-size: 90px;
+}
+}
+
+.site p {
+	line-height: 1.7
+}
+
+.site input[type=checkbox]
+{
+  -ms-transform: scale(1.2); 
+  -moz-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  padding: 10px;
+}
+
+/* Общее */
+
+.site header .row, footer .row  {
+	align-items: center;
+	justify-content: center;
+}
+
+.site .logo img {
+	width: 190px;
+	height: 51px
+}
+
+@media (min-width: 992px) {
+	.site .logo img {
+	width: 230px;
+	height: 65px
+}
+}
+
+.site .logo {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.site header .row, footer .row {
+	text-align: left;
+}
+}
+
+.biggest-menu {
+		margin-top: 15px;
+}
+
+@media (min-width: 992px) {
+	.site .biggest-menu  {
+	margin-top: 0;
+	}
+}
+
+.site .biggest-menu ul {
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: end;
+}
+
+@media (min-width: 768px) {
+	.site .menu-item {
+	justify-content: center;
+}
+}
+
+.site .menu-item {
+	display: none;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.site .menu-item {
+	display: block;
+}
+}
+
+.site .mobile-menu .menu-item {
+	display: block;
+}
+
+.site .biggest-menu ul li a {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 30px;
+	transition: color 200ms
+}
+
+.site .biggest-menu ul li:first-child a {
+	margin-left: 0;
+}
+
+@media (min-width: 992px) {
+	.site .biggest-menu ul li a {
+	font-size: 20px;
+	}
+}
+
+.site .biggest-menu ul li a:hover {
+	color: #AB7FCB	
+}
+
+.site .menu-open {
+	position: absolute;
+	z-index: 100;
+	right: 15px;
+	top: 15px;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	background: url(menu-open.png) no-repeat center center;
+	background-size: 40px;
+}
+
+.site .mobile-menu {
+    display: none;
+    position: fixed;
+	background: white;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    padding: 30px 15px 15px 15px;
+}
+
+.site .mobile-menu .menu-item {
+	font-size: 22px;
+    text-align: left;
+}
+
+.site .mobile-menu .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    background: url(close.png) no-repeat center center;
+    border: 0;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.site .menu-open {	
+	display: none;
+}
+}
+
+.site .ending {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.site .ending  {
+	text-align: left;
+}
+}
+
+/* Основная часть */
+
+.site section {
+	padding: 20px 0
+}
+
+.site .recipe {
+	border: 2px dashed #ffb231;
+	padding: 10px;
+}
+
+@media (min-width: 768px) {
+	.site .recipe {
+	border: 0;
+	margin: 40px 0px;
+	padding: 0;
+	}
+}
+
+.site .recipe-perk a {
+	color: #ffb231;
+	transition: color 200ms
+}
+
+.site .recipe-perk a:hover {
+	text-decoration: underline;
+}
+
+.site .contact-link {
+	display: block;
+	padding: 20px;
+	margin: 15px 0px;
+	width: 100%;
+	text-align: center;
+	transition: background 250ms;
+	font-weight: bold;
+}
+
+.ds {
+	background: #5865F2
+}
+
+.ds:hover {
+	background: #4e5ad9
+}
+
+.yt {
+	background: #FF0000
+}
+
+.yt:hover {
+	background: #cc0000
+}
+
+.vk {
+	background: #0077FF
+}
+
+.vk:hover {
+	background: #005fcc
+}
+
+.bo {
+	background: #EF6F29
+}
+
+.bo:hover {
+	background: #c75c22
+}
+
+.site .what-is p {
+	margin-bottom: 10px;
+}
+
+.site .mods p {
+	margin-bottom: 25px;
+}
+
+.site .mods .mod-block {
+	display: block;
+	margin-bottom: 15px;
+	padding: 10px;
+	box-shadow: 2px 6px 15px 2px rgba(34, 60, 80, 0.2);
+	transition: box-shadow 500ms;
+}
+
+@media (min-width: 992px) {
+	.site .mods .mod-block {
+	height: 100%;
+	padding: 20px;
+	text-align: center;
+	transition: all 300ms
+	}
+}
+
+.site .mods .col-6 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+@media (min-width: 768px) {
+	.site .mods .col-6 {
+	padding-left: 15px;
+	padding-right: 15px;
+	}
+}
+
+.site .mods .mod-block .main-mod-pic {
+	display: block;
+	margin-bottom: 15px;		
+}
+
+.site .mods .mod-block .main-mod-pic img {
+	max-width: 50%;
+	object-fit: cover
+}
+
+.site .mods .mod-block h3 {
+	font-size: 16px;
+	margin-top: 65px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@media (min-width: 768px) {
+	.site .mods .mod-block h3 {
+		font-size: 18px;
+	}
+}
+.site .mods .mod-block:hover {
+	transform: scale(0.9);
+}
+
+
+.site .team .team-pic img {
+	display: block;
+	margin-left: 50%;
+	width: 50%;
+	object-fit: cover
+}
+
+.site .team ul {
+	list-style: none;
+}
+
+.site .team ul li {
+	margin-left: 20px;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.site .team ul li:before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 7px; left: -20px; width: 10px; height: 10px;
+	background: #AB7FCB;
+	border-radius: 1826px;
+}
+
+
+.site .team ul li span {
+	font-weight: bold
+}
+
+/* Одиночная запись */
+
+.site .singular {
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+.site .singular p {
+	margin-bottom: 1em
+}
+
+.site .aligncenter, div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.site .size-full {
+	width: 90%;
+	height: auto
+}
+
+/* Все статьи */
+
+.site .post-section .post-ind {
+	height: 100%;
+	margin-bottom: 30px
+}
+
+.site .post-section .post-ind .image {
+	display: block;
+    position: relative;
+}
+
+.site .post-section .post-ind .image::after {
+    display: block;
+    content: '';
+    padding-bottom: 100%;
+}
+
+.site .post-section .post-ind .image img {
+	display: block;
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+	object-fit: cover
+}
+
+.site .post-section .post-ind h3:hover {
+	text-decoration: underline
+}
+
+.site .post-section .post-ind h3 {
+	text-align: center;
+}
+
+@media (min-width: 560px) {
+	.site .post-section .post-ind h3  {
+	text-align: left;
+	}
+}
+
+.site .read-more {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	margin-top: 10px;
+	padding: 5px 25px;
+	background: #AB7FCB	;
+	color: white;
+	transition: background 200ms
+}
+
+.site .read-more:hover {
+	background: #9972b5;
+}
+
+@media (min-width: 560px) {
+	.site .read-more  {
+	width: auto;
+	}
+}
+
+/* Рецепты */
+
+.site .recipe-section .recipe {
+	margin-bottom: 45px;
+}	
+
+.site .recipe-section .recipe h2 a:hover {
+	text-decoration: underline;
+}	
+
+.site .recipe-section .recipe .row {
+	align-items: center
+}	
+
+.site .recipe-section .recipe:nth-child(odd) .row {
+	flex-direction: row-reverse
+}	
+
+.site .recipe .recipe-pic figure {
+    position: relative;
+}
+
+.site .recipe .recipe-pic figure::after {
+    display: block;
+    content: '';
+    padding-bottom: 56.25%;
+}
+
+.site .recipe .recipe-pic figure img {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}	
+
+.site .recipe-section .recipe-desc {
+	margin-bottom: 20px;
+}	
+
+.site .ingridients {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ffb231
+}
+
+.site .ingridients label {
+	display: block;
+	margin: 10px 0px;
+	font-size: 24px;
+}
+
+@media (min-width: 560px) {
+	.site .ingridients label {
+	font-size: 18px;
+	}
+}
+
+.site .ingridients button {
+	font-family: 'Open Sans';
+	display: inline-block;
+	width: 100%;
+	font-size: 18px;
+	margin-top: 10px;
+	padding: 5px 25px;
+	background: #ffb231;
+	color: white;
+	transition: background 200ms;
+}
+
+@media (min-width: 560px) {
+	.site .ingridients button {
+	width: auto;
+	}
+}
+
+.site .ingridients button:hover {
+	cursor: pointer;
+	background: #ffa206;
+}
+
+.site .recipe-title {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* Отдельный рецепт */
+
+.site .recipe-ind .recipe-thumb {
+	margin-bottom: 20px
+}
+
+.site .recipe-ind .recipe-thumb img {
+	display: block;
+	width: 100%;
+}
+
+.site .video {
+	width: 100%;
+	height: 0;
+	padding-bottom: 56%;
+	margin: 0 auto;
+}
+
+.site .iframe {
+	width: 100%;
+	height: 0;
+	padding-bottom: 56%;
+	margin: 0 auto;
+}
+
+.site .recipe-ind .video iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.site .recipe-ind .video p {
+	margin-bottom: 10px
+}
+
+.site .recipe-ind .on-portion {
+	margin-top: 20px;
+	font-weight: bold;
+	text-align: center
+}
+
+.site .recipe-ind table {
+	width: 100%;
+}
+
+.site .recipe-ind table tr th {
+	width: 50%;
+}
+
+.site .recipe-ind table th {
+	padding: 7px;
+	text-align: center
+}
+
+.site .recipe-ind table td {
+	padding: 7px;
+	text-align: center
+}
+
+.site .recipe-ind table .type td {
+	padding: 0;
+	font-size: 14px
+}
+
+.site .recipe-ind .rec-desc {
+	margin-bottom: 20px;
+}
+
+.site .recipe-ind .turns h2 {
+	margin-top: 10px;
+}
+
+.site .recipe-ind .turns img {
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+	.site .recipe-ind .turns img {
+	margin-bottom: 0;
+	}
+}
+
+.site .recipe-ind .turns img {
+	display: block;
+	width: 100%
+}
+
+.site .recipe-ind .turns .row {
+	align-items: center;
+}
+
+.site .recipe-ind .turns .turn {
+	margin-bottom: 20px;
+	border: 2px dashed #ffb231;
+	padding: 10px;
+}
+
+@media (min-width: 768px) {
+	.site .recipe-ind .turns .turn  {
+	border: 0;
+	padding: 0;
+	}
+}
+
+.site .recipe-ind ul {
+	margin-top: 15px;
+	border: 1px solid #ffb231;
+	padding: 10px;
+	list-style: none;
+}
+
+.site .recipe-ind ul li {
+	margin-left: 20px;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.site .recipe-ind ul li:before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 7px; left: -20px; width: 10px; height: 10px;
+	background: #ffb231;
+	border-radius: 1826px;
+}
+
+.main-map-pic img {
+	width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.map-block {
+	margin: 35px 0px;
+}
+
+/* Maps */
+
+.main-map-pic a img {
+	transition: transform 0.5s;
+}
+
+.main-map-pic a img:hover {
+	transform: scale(1.1);
+}
