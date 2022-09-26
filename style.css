@@ -1,0 +1,711 @@
+/*
+Theme Name: Barcode Studia
+Theme URI: 
+Description: Официальная тема сайта Barcode Studia.
+Version: 1.0
+Author: 1826
+Author URI:
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+@media (min-width: 560px) {
+	.site  {
+	font-size: 17px;
+	}
+}
+
+@media (min-width: 992px) {	
+	.site  {
+	font-size: 18px;
+	}
+}
+
+.site {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	font: 16px 'Be Vietnam Pro', Verdana;
+	background: #101010;
+	color: white;
+}
+
+.site header {
+	flex: 0 0 auto;
+	padding-top: 30px;
+}
+
+.site main {
+	flex: 1 0 auto;
+}
+
+.site footer {
+	flex: 0 0 auto;
+	padding: 30px 0px
+}
+
+footer .mail {
+	color: #AB7FCB
+}
+
+footer .mail:hover {
+	text-decoration: underline
+}
+
+@media (min-width: 768px) {
+	header {
+	padding-bottom: 30px;
+}
+}		
+
+.site h1 {
+	font-family: 'Fira Sans';
+	font-size: 34px;
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: bold
+}
+
+.site .what-is h1 {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+@media (min-width: 992px) {
+	.site .what-is h1 {
+	font-size: 44px;
+	}
+}
+
+.site h2 {
+	font-family: 'Fira Sans';
+	margin-bottom: 25px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+@media (min-width: 768px) {
+	.site h2 {
+	font-size: 36px;
+}
+}
+
+.site p {
+	line-height: 1.7
+}
+
+.site input[type=checkbox]
+{
+  -ms-transform: scale(1.2); 
+  -moz-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  padding: 10px;
+}
+
+/* Общее */
+
+.site header .row, footer .row  {
+	align-items: center;
+	justify-content: center;
+}
+
+.site .logo img {
+	width: 190px;
+	height: 51px
+}
+
+@media (min-width: 992px) {
+	.site .logo img {
+	width: 230px;
+	height: 65px
+}
+}
+
+.site .logo {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.site header .row, footer .row {
+	text-align: left;
+}
+}
+
+.biggest-menu {
+	margin-top: 15px;
+}
+
+@media (min-width: 992px) {
+	.site .biggest-menu  {
+	margin-top: 0;
+	}
+}
+
+.site .biggest-menu ul {
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: end;
+}
+
+@media (min-width: 768px) {
+	.site .menu-item {
+	justify-content: center;
+}
+}
+
+.site .menu-item {
+	display: none;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.site .menu-item {
+	display: block;
+}
+}
+
+.site .mobile-menu {
+	background: #101010;
+}
+
+.site .mobile-menu .menu-item {
+	display: block;
+}
+
+.site .biggest-menu ul li a {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 30px;
+	transition: color 200ms
+}
+
+.site .biggest-menu ul li:first-child a {
+	margin-left: 0;
+}
+
+@media (min-width: 992px) {
+	.site .biggest-menu ul li a {
+	font-size: 20px;
+	}
+}
+
+.site .biggest-menu ul li a:hover {
+	color: #AB7FCB	
+}
+
+.site .menu-open {
+	position: absolute;
+	z-index: 100;
+	right: 15px;
+	top: 15px;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	background: url(menu-open.png) no-repeat center center;
+	background-size: 40px;
+}
+
+.site .mobile-menu {
+    display: none;
+    position: fixed;
+	background: white;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    padding: 30px 15px 15px 15px;
+}
+
+.site .mobile-menu .menu-item {
+	font-size: 22px;
+    text-align: left;
+}
+
+.site .mobile-menu .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    background: url(close.png) no-repeat center center;
+    border: 0;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.site .menu-open {	
+	display: none;
+}
+}
+
+.site .ending {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.site .ending  {
+	text-align: left;
+}
+}
+
+.site .marker-list {
+	list-style: none;
+}
+
+.site .marker-list li {
+	margin-left: 20px;
+	position: relative;
+	margin-bottom: 15px
+}
+
+.site .marker-list li:last-child {
+	margin-bottom: 0
+}
+
+.site .marker-list li:before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 7px; left: -20px; width: 10px; height: 10px;
+	background: #AB7FCB;
+	border-radius: 1826px;
+}
+
+.site .marker-list li span {
+	font-weight: bold
+}
+
+.mods-desc, .modding-desc {
+	line-height: 1.7
+}
+
+/* Основная часть */
+
+.site section {
+	padding: 20px 0
+}
+
+.site .modding-section .mod-info {
+	border: 2px dashed #ab7fcb;
+	padding: 10px;
+}
+
+@media (min-width: 768px) {
+	.site .modding-section .mod-info {
+	border: 0;
+	margin: 40px 0px;
+	padding: 0;
+	}
+}
+
+.site .modding-perk a {
+	color: #ab7fcb;
+	transition: color 200ms
+}
+
+.site .modding-perk a:hover {
+	text-decoration: underline;
+}
+
+.site .what-is p {
+	margin-bottom: 10px;
+}
+
+.site .mods p {
+	margin-bottom: 25px;
+}
+
+.site .mods .mod-block {
+	display: block;
+	margin-bottom: 15px;
+	padding: 10px;
+	box-shadow: 2px 6px 15px 2px rgba(34, 60, 80, 0.2);
+	transition: box-shadow 500ms;
+	text-align: center
+}
+
+@media (min-width: 992px) {
+	.site .mods .mod-block {
+	height: 100%;
+	padding: 20px;
+	text-align: center;
+	transition: all 300ms
+	}
+}
+
+.site .mods .col-6 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+@media (min-width: 768px) {
+	.site .mods .col-6 {
+	padding-left: 15px;
+	padding-right: 15px;
+	}
+}
+
+.site .mods .mod-block .main-mod-pic {
+	display: block;
+	margin-bottom: 15px;		
+}
+
+.site .mods .mod-block .main-mod-pic img {
+	max-width: 50%;
+	object-fit: cover
+}
+
+.site .mods .mod-block h3 {
+	font-size: 16px;
+	margin-top: 65px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@media (min-width: 768px) {
+	.site .mods .mod-block h3 {
+		font-size: 18px;
+	}
+}
+.site .mods .mod-block:hover {
+	transform: scale(0.9);
+}
+
+/* Одиночная запись */
+
+.site .singular {
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+.site .singular p {
+	margin-bottom: 1em
+}
+
+.site .singular li {
+	margin-bottom: 1em
+}
+
+.site .aligncenter, div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.site .size-full {
+	width: 90%;
+	height: auto
+}
+
+.site .singular ol {
+	padding: 0px 25px
+}
+
+.site .singular ul {
+	list-style: none
+}
+
+.site .singular ul li {
+	position: relative;
+	margin-left: 20px
+}
+
+.site .singular ul li:before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 7px; left: -20px; width: 10px; height: 10px;
+	background: #AB7FCB;
+	border-radius: 1826px
+}
+
+/* Все статьи */
+
+.site .post-section .post-ind {
+	height: 100%;
+	margin-bottom: 30px
+}
+
+.site .post-section .post-ind .image {
+	display: block;
+    position: relative;
+}
+
+.site .post-section .post-ind .image::after {
+    display: block;
+    content: '';
+    padding-bottom: 100%;
+}
+
+.site .post-section .post-ind .image img {
+	display: block;
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+	object-fit: cover
+}
+
+.site .post-section .post-ind h3:hover {
+	text-decoration: underline
+}
+
+.site .post-section .post-ind h3 {
+	text-align: center;
+}
+
+@media (min-width: 560px) {
+	.site .post-section .post-ind h3  {
+	text-align: left;
+	}
+}
+
+.site .read-more {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	margin-top: 10px;
+	padding: 5px 25px;
+	background: #AB7FCB	;
+	color: white;
+	transition: background 200ms
+}
+
+.site .read-more:hover {
+	background: #9972b5;
+}
+
+@media (min-width: 560px) {
+	.site .read-more  {
+	width: auto;
+	}
+}
+
+/* Рецепты */
+
+.site .modding-section .mod-info {
+	margin-bottom: 45px;
+}	
+
+.site .modding-section .mod-info h2 a:hover {
+	text-decoration: underline;
+}	
+
+.site .modding-section .mod-info .row {
+	align-items: center
+}	
+
+.site .modding-section .mod-info:nth-child(odd) .row {
+	flex-direction: row-reverse
+}	
+
+.site .mod-info .modding-pic figure {
+    position: relative;
+}
+
+.site .mod-info .modding-pic figure::after {
+    display: block;
+    content: '';
+    padding-bottom: 56.25%;
+}
+
+.site .mod-info .modding-pic figure img {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}	
+
+.site .modding-section .modding-desc {
+	margin-bottom: 20px;
+}	
+
+.site .ingridients {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ab7fcb
+}
+
+.site .ingridients label {
+	display: block;
+	margin: 10px 0px;
+	font-size: 24px;
+}
+
+@media (min-width: 560px) {
+	.site .ingridients label {
+	font-size: 18px;
+	}
+}
+
+.site .ingridients button {
+	font-family: 'Open Sans';
+	display: inline-block;
+	width: 100%;
+	font-size: 18px;
+	margin-top: 10px;
+	padding: 5px 25px;
+	background: #ab7fcb;
+	color: white;
+	transition: background 200ms;
+}
+
+@media (min-width: 560px) {
+	.site .ingridients button {
+	width: auto;
+	}
+}
+
+.site .ingridients button:hover {
+	cursor: pointer;
+	background: #ffa206;
+}
+
+.site .modding-title {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* Отдельный рецепт */
+
+.site .mod-ind .modding-thumb {
+	margin-bottom: 20px
+}
+
+.site .mod-ind .modding-thumb img {
+	display: block;
+	width: 100%;
+}
+
+.site .video-container {
+	max-width: 780px;
+	margin: 0 auto;
+	text-align: center
+}
+
+.site .video-container .video {
+	position: relative;
+  	padding-bottom: 56.25%
+}
+
+.site .video-container .video iframe {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+
+.site .mod-ind .mods-desc {
+	margin-bottom: 20px;
+}
+
+.site .mod-ind .turns h2 {
+	margin-top: 10px;
+}
+
+.site .mod-ind .turns img {
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+	.site .mod-ind .turns img {
+	margin-bottom: 0;
+	}
+}
+
+.site .mod-ind .turns img {
+	display: block;
+	width: 100%
+}
+
+.site .mod-ind .turns .row {
+	align-items: center;
+}
+
+.site .mod-ind .turns .turn {
+	margin-bottom: 20px;
+	border: 2px dashed #ab7fcb;
+	padding: 10px;
+}
+
+@media (min-width: 768px) {
+	.site .mod-ind .turns .turn  {
+	border: 0;
+	padding: 0
+	}
+}
+
+.main-map-pic img {
+	width: 100%;
+	display: block;
+	object-fit: cover
+}
+
+.main-map-pic .lazyloaded {
+	display: none
+}
+
+.map-block {
+	margin: 35px 0px;
+}
+
+/* Maps */
+
+.main-map-pic a img {
+	transition: transform 0.5s;
+}
+
+.main-map-pic a img:hover {
+	transform: scale(1.1);
+}
+
+/* Social Link */
+
+.site .social-link {
+	color: #ab7fcb
+}
+
+.site .social-link:hover {
+	text-decoration: underline
+}
+
+/* Download */
+
+.site .download-block {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center
+}
+
+.site .download .download-block  {
+	text-align: center
+}
+
+.site .download .download-block .read-more {
+	width: 100%
+}
