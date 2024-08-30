@@ -1,0 +1,168 @@
+@font-face {
+	font-family: 'Exciter';
+	src: url("exciter.ttf") format("truetype");
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: 'Tour';
+	src: url("tour.ttf") format("truetype");
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+.site-auga {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	font: 18px 'Tour', Verdana;
+	background: #f087a0;
+	color: white;
+}
+
+.site-auga h1, h2 {
+	text-align: center
+}
+
+.site-auga h1 {
+	font-family: 'Exciter';
+	font-size: 128px;
+	margin-top: -80px;
+}
+
+.site-auga h2 {
+	font-size: 36px;
+	margin-bottom: 25px
+}
+
+.site-auga h3 {
+	font-size: 24px;
+	margin-bottom: 25px;
+	text-transform: lowercase
+}
+
+.site-auga p {
+	text-transform: lowercase
+}
+
+.site-auga ul {
+	margin: 25px 0;
+	text-transform: lowercase
+}
+
+.site-auga a {
+	color: #f5ffb4;
+	text-decoration: none;
+}
+
+.site-auga a:hover {
+	text-decoration: underline
+}
+
+.site-auga header {
+	margin-top: 35px
+}
+
+.site-auga header .logo {
+	text-align: center
+}
+
+.site-auga header .logo img {
+	border-radius: 100%;
+	max-width: 300px
+}
+
+.site-auga .auga-best .auga-best-container {
+	display: flex;
+	justify-content: space-between
+}
+
+.site-auga figure {
+	display: block;
+    position: relative;
+}
+
+.site-auga figure::after {
+    display: block;
+    content: '';
+    padding-bottom: 100%;
+}
+
+.site-auga figure img {
+	display: block;
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+	object-fit: contain;
+	object-position: 50% 50%
+}
+
+.site-auga .picture {
+	display: block;
+    position: relative;
+	height: 100%;
+}
+
+.site-auga .picture::after {
+    display: block;
+    content: '';
+    padding-bottom: 100%;
+}
+
+.site-auga .picture img {
+	display: block;
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+	transition: all 200ms
+}
+
+.site-auga .picture img:hover {
+	transform: scale(1.1)
+}
+
+.site-auga .col-12, .site-auga .col-6 {
+	margin-bottom: 50px;
+}
+
+.site-auga .auga-comissions p {
+	margin-bottom: 15px
+}
+
+.site-auga .auga-contacts .auga-social-container {
+	text-align: center
+}
+
+.site-auga .auga-contacts svg {
+	width: 64px;
+	height: 64px;
+	fill: white;
+	transition: 200ms
+}
+
+.site-auga .auga-contacts svg:hover {
+	width: 80px;
+	height: 80px;
+	fill: white;
+}
+
+.site-auga .auga-contacts a {
+	margin-left: 20px
+}
+
+.site-auga .auga-contacts a:first-child {
+	margin-left: 0
+}
+
+.site-auga footer {
+	margin: 20px 0 30px 0;
+	text-align: center;
+	text-transform: lowercase
+}

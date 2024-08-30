@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Platform
+Template Name: Platform-Collaboration
 */
 ?>
 <?php get_header(); ?>

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Single Mod
+Template Name: Single Collaboration
 */
 ?>
 <?php get_header(); ?>
@@ -9,7 +9,7 @@ Template Name: Single Mod
 	<div class="container">
 		<?php if ( have_posts() ) : ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<h1><?php the_title(); ?></h1>
+				<h1 style="margin-top: 25px"><?php the_title(); ?></h1>
 				<section class="mod-info">
 					<div class="row">
 						<div class="col-12 col-md-6">
@@ -20,14 +20,11 @@ Template Name: Single Mod
 						<div class="col-12 col-md-6">
 							<div class="modding-info">
 								<div class="mods-desc"><?php the_content(); ?></div>
-								<p class="modding-perk">Mod type: <?php the_terms( $post->ID, 'type' ,  '' ) ?></p>
-								<p class="modding-perk">Mod for: <?php the_terms( $post->ID, 'game' ,  '' ) ?></p>
-								<p class="modding-perk">Platforms: <?php the_terms( $post->ID, 'platform' ,  '' ) ?></p>
+								<p class="modding-perk">Mod type: <?php the_terms( $post->ID, 'type_collab' ,  '' ) ?></p>
+								<p class="modding-perk">Mod for: <?php the_terms( $post->ID, 'game_collab' ,  '' ) ?></p>
+								<p class="modding-perk">Platforms: <?php the_terms( $post->ID, 'platform_collab' ,  '' ) ?></p>
 							</div>
 						</div>
-					</div>
-					<div class="video-container">
-						<div class="video"><iframe src="https://www.youtube.com/embed/<?php the_field('youtube-trailer') ?>?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 					</div>
 				</section>
 				<?php $features = get_field('features');

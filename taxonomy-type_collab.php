@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Platform
+Template Name: Type-Collaboration
 */
 ?>
 <?php get_header(); ?>
@@ -24,7 +24,7 @@ Template Name: Platform
 						</div>
 					</section>		
 				<?php endwhile; ?>
-			<?php endif; ?>		
+			<?php endif; ?>				
 	</div>
 </div>
 </main>		

@@ -1,9 +1,11 @@
 <?php get_header(); 
+$page_object = get_queried_object();
 $current_page = !empty( $_GET['publications'] ) ? $_GET['publications'] : 1;
 $query = new WP_Query( [
-	'posts_per_page' => 8,
+	'posts_per_page' => 6,
 	'orderby'        => 'date',
-	'paged' => $current_page
+	'paged' => $current_page,
+	'category_name'   => $page_object->cat_name,
 ] );
 global $post; ?>
 <main>
@@ -24,9 +26,12 @@ global $post; ?>
 							<div class="col-12 col-md-8">
 								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 								<div class="excerpt d-none d-md-block"><?php the_excerpt(); ?></div>
-								<div class="post-tags short-tags"> <?php the_terms( $GLOBALS['post']->ID, 'category', 'Category: '); ?></div>
-								<div class="post-tags short-tags"> <?php the_terms( $GLOBALS['post']->ID, 'post_tag', 'Related to: '); ?></div>
-								<div class="post-tags short-tags"><?php the_date( 'Y/m/d', '<p>', '</p>' ); ?></div>
+								<div class="post-tags short-tags"> 
+									<?php the_terms( $GLOBALS['post']->ID, 'category', 'Category: '); ?>
+								</div>
+								<div class="post-tags short-tags"> 
+									<?php the_terms( $GLOBALS['post']->ID, 'post_tag', 'Related to: '); ?>
+								</div>
 								<a class="read-more" href="<?php the_permalink(); ?>">Read more</a>
 							</div>
 						</div>

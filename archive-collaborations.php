@@ -1,13 +1,13 @@
 <?php
 /*
-Template Name: Platform
+Template Name: Collaborations
 */
 ?>
 <?php get_header(); ?>
 <main>
 <div class="container">
 	<div class="modding-section">
-		<h1>Mods</h1>
+		<h1>Collaborations</h1>
 			<?php if ( have_posts() ) : ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<section class="mod-info">
@@ -16,15 +16,15 @@ Template Name: Platform
 							<div class="col-12 col-md-6">
 								<h2 class="modding-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 								<div class="mods-desc"><?php the_content(); ?></div>
-								<p class="modding-perk">Mod type: <?php the_terms( $post->ID, 'type' ,  '' ) ?></p>
-								<p class="modding-perk">Mod for: <?php the_terms( $post->ID, 'game' ,  '' ) ?></p>
-								<p class="modding-perk">Platforms: <?php the_terms( $post->ID, 'platform' ,  '' ) ?></p>
+								<p class="modding-perk">Mod type: <?php the_terms( $post->ID, 'type_collab' ,  '' ) ?></p>
+								<p class="modding-perk">Mod for: <?php the_terms( $post->ID, 'game_collab' ,  '' ) ?></p>
+								<p class="modding-perk">Platforms: <?php the_terms( $post->ID, 'platform_collab' ,  '' ) ?></p>
 								<a href="<?php the_permalink(); ?>" class="read-more">Read more</a>
 							</div>
 						</div>
 					</section>		
 				<?php endwhile; ?>
-			<?php endif; ?>		
+			<?php endif; ?>	
 	</div>
 </div>
 </main>		
